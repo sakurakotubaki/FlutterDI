@@ -1,5 +1,6 @@
 # DIとは何なのか？
 参考になりそうな記事
+
 [Qiitaの記事](https://qiita.com/flutter_bird/items/d8f94d423718c9430656)
 
 -----
