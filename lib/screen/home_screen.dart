@@ -1,7 +1,7 @@
 import 'package:di_app/common/color.dart';
-import 'package:di_app/common/datetime.dart';
 import 'package:di_app/provider/repository_implprovider.dart';
 import 'package:di_app/screen/second_screen.dart';
+import 'package:di_app/screen/widget/datetime_text_widget.dart';
 import 'package:di_app/state/counter_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -41,7 +41,7 @@ class HomeScreen extends ConsumerWidget {
         child: Column(
           children: [
             SizedBox(height: MediaQuery.of(context).size.height / 3),
-            Text('現在時刻: ${DateTime.now().formatted}'), // ここで、extensionメソッドを呼び出す
+            const DateTimeTextWidget(), // ここで、extensionメソッドを呼び出す
             const SizedBox(height: 20),
             Text('ストップウォッチ: $count',
                 style: const TextStyle(fontSize: FONT_SIZE, color: TEXT_COLOR)),
